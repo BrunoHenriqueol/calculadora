@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="324dp"
+        android:layout_height="63dp"
+        android:text="Multiplicar"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="324dp"
+        android:layout_height="63dp"
+        android:text="Dividir"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="324dp"
+        android:layout_height="63dp"
+        android:text="Somar"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="324dp"
+        android:layout_height="63dp"
+        android:text="Subtrair"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <Button
+        android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Mostrar Resultado"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="648dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="161dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
