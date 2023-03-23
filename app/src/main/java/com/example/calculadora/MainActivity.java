@@ -22,7 +22,24 @@ public class MainActivity extends AppCompatActivity {
     public void somar(View view) {
         int valor1 = Integer.parseInt(txtNmr1.getText().toString());
         int valor2 = Integer.parseInt(txtNmr2.getText().toString());
+        tvResultado.setText(String.valueOf(valor1 - valor2));
+    }
 
+    public void subtrair(View view) {
+        int valor1 = Integer.parseInt(txtNmr1.getText().toString());
+        int valor2 = Integer.parseInt(txtNmr2.getText().toString());
         tvResultado.setText(String.valueOf(valor1 + valor2));
+    }
+
+    public void Multiplicar(View view) {
+        int valor1 = Integer.parseInt(txtNmr1.getText().toString());
+        int valor2 = Integer.parseInt(txtNmr2.getText().toString());
+        tvResultado.setText(String.valueOf(valor1 / valor2));
+    }
+
+    public void Dividir(View view) {
+        int valor1 = Integer.parseInt(txtNmr1.getText().toString());
+        int valor2 = Integer.parseInt(txtNmr2.getText().toString());
+        tvResultado.setText(String.valueOf(valor1 * valor2));
     }
 }
