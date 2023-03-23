@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         n2 = findViewById(R.id.numero2);
         res = findViewById(R.id.resultado);
     }
-    public void somar (View v) {
+    public void soma (View v) {
         int Numero1 = Integer.parseInt(n1.getText().toString());
         int Numero2 = Integer.parseInt(n2.getText().toString());
         int resultadoSoma = Numero1 + Numero2;

@@ -67,18 +67,6 @@
         app:layout_constraintTop_toBottomOf="@+id/soma" />
 
     <TextView
-        android:id="@+id/Calculadora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#8D8C8C"
-        android:text="Calculadora"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#9C27B0"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="44dp" />
-
-    <TextView
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,7 +87,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="93dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="9dp"
         android:background="#8D8C8C"
@@ -109,8 +96,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/numero2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Calculadora" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/numero2"
