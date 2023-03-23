@@ -47,6 +47,7 @@
         android:background="#FFFFFF"
         android:backgroundTint="#000000"
         android:text="Somar"
+        android:textColor="#757575"
         app:layout_constraintBottom_toTopOf="@+id/subtração"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
