@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiplicacao"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8E8D8D"
@@ -11,58 +12,120 @@
         android:id="@+id/button3"
         android:layout_width="324dp"
         android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="88dp"
         android:text="Multiplicar"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisão" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/divisão"
         android:layout_width="324dp"
         android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
         android:text="Dividir"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="505dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtração" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/soma"
         android:layout_width="324dp"
         android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="9dp"
         android:background="#FFFFFF"
         android:backgroundTint="#000000"
         android:text="Somar"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="362dp" />
+        app:layout_constraintBottom_toTopOf="@+id/subtração"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/subtração"
         android:layout_width="324dp"
         android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
         android:text="Subtrair"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintBottom_toTopOf="@+id/divisão"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soma" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Calculadora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#8D8C8C"
         android:text="Calculadora"
-        android:textColor="#00F10A"
+        android:textColor="#FFFFFF"
         android:textColorHint="#9C27B0"
         android:textSize="34sp"
         tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="100dp" />
+        tools:layout_editor_absoluteY="44dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
         android:background="#8D8C8C"
-        android:text="Resultado:"
-        android:textColor="#00FF0A"
+        android:text="resultado"
+        android:textColor="#FFFFFF"
         android:textColorHint="#9C27B0"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="238dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero2" />
+
+    <TextView
+        android:id="@+id/numero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="9dp"
+        android:background="#8D8C8C"
+        android:text="Numero:"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9C27B0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/numero2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calculadora" />
+
+    <TextView
+        android:id="@+id/numero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        android:background="#8D8C8C"
+        android:text="Numero:"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9C27B0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
