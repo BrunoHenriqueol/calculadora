@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        n1 = findViewById(R.id.numero1);
+        n1 = findViewById(R.id.n1);
         n2 = findViewById(R.id.numero2);
         res = findViewById(R.id.resultado);
     }
